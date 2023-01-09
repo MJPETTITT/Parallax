@@ -12,7 +12,7 @@ $(document).ready(function () {
         scrollPercent = (s / (d - c));
 
         /*var position = (scrollPercent * ($(document).width() - $horizontal.width()));*/
-        var position = (500 -scrollPercent * 2 * ($(document).width() - $horizontal1.width()));
+        var position = (500 -scrollPercent * 3 * ($(document).width() - $horizontal1.width()));
         
         $horizontal1.css({
             'left': position
@@ -55,12 +55,22 @@ $(document).ready(function () {
 		var elementTop = document.getElementsByClassName("video-container")[0].offsetTop;
 		opacityValue = 1 - (elementTop - 100 - scrollTop)/elementTop;
 		
+		if (scrollTop > elementTop * 2) {
+			opacityValue = 0;
+		}
+		
+
+		
 		if (opacityValue > 1) {
 			opacityValue = 2 - opacityValue;
 		}
-       opacityValue = 1000 * (Math.pow(opacityValue, 50));
+       opacityValue = 1000 * (Math.pow(opacityValue, 30));
 		if (opacityValue > 1) {
 			opacityValue = 1;
+		}
+		
+		if (opacityValue < 0.01) {
+			opacityValue = 0;
 		}
 		console.log(opacityValue);
 		

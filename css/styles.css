@@ -9,10 +9,11 @@ body {
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-weight: 900;
 	font-size: 12pt;
+	color: white;
 }
 
 p {
-	font-weight: 400;
+	font-weight: 40O;
 }
 
 .material-symbols-outlined {
@@ -68,6 +69,77 @@ p {
 .gradient-background-purple-78 {
     background-image: -webkit-linear-gradient(67deg, #34307F, #8B3D96);
 }
+
+/*used for solid font colours*/
+
+.black {
+   color: #0D0D0D !important; 
+}
+
+.white {
+    color: #FFFFFF !important;
+}
+
+.dark-red {
+   color: #BB2D38 !important; 
+}
+
+.red {
+   color: #EB1D24 !important; 
+}
+
+.pink {
+   color: #EF3A79 !important; 
+}
+
+.orange {
+   color: #F48037!important; 
+}
+
+.lime {
+   color: #CEDD41!important; 
+}
+
+.yellow {
+   color: #FEF229!important; 
+}
+
+.green {
+   color: #00A955!important; 
+}
+
+.light-green {
+   color: #AED24A!important; 
+}
+
+.teal {
+   color: #00ADBF!important; 
+}
+
+.turquoise {
+   color: #19BDCD!important; 
+}
+
+.blue {
+   color: #006BAD!important; 
+}
+
+.light-blue {
+   color: #00A8E4!important; 
+}
+
+.purple {
+   color: #34307F!important; 
+}
+
+.violet {
+   color: #8B3D96!important; 
+}
+
+.white {
+    color: #ffffff !important;
+}
+
 
 #horizontal-1 {
     position: fixed;
@@ -128,6 +200,11 @@ p {
 	font-size: 1.5em;
 	width: 80%;
 	line-height: 1.5em;
+}
+
+li {
+	line-height: 1.6;
+	font-weight: 900;
 }
 
 .CTA {
@@ -215,3 +292,28 @@ p {
 	background-repeat: no-repeat;
 }
 
+.container-col {
+	text-align: center;
+	display: inline-block;
+	width: 80%;
+}
+
+.left-col {
+	padding: 20px;
+	width: calc(50% - 40px);
+float: left;
+	
+}
+
+.final-container {
+ font-size: 1.2em;
+	height: 60vh;
+}
+
+.slide-small {
+	height: 30vh;
+}
+
+.CTA.big {
+	font-size: 1.5em;
+} 
